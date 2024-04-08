@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="	https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <title>Daniel lanches</title>
+</head>
+<style>
+
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Bebas Neue", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html{
+    overflow-y: 1;
+}
+
+.container{
+    max-width: 1023px;
+    width: 100%;
+    margin-left: 18%;
+}
+
+img{
+    height: 180px;
+    width: 180px;
+    margin-bottom: 5px;
+}
+
+img:hover{
+    transform: scale(1.1);
+}
+
+#guara{
+    height: 160px;
+    width: 160px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+    header{
+        padding: 10px;
+        color: white;
+margin-bottom: 20px;
+    }
+    .col{
+        display: flex;
+        margin-bottom: 30px;
+    }
+
+h1{
+
+    font-weight: bold;
+    font-size: 50px;
+    letter-spacing: 2px;
+}
+
+h2{
+    margin: 20px 0;
+}
+button{
+    border: none;
+    color: rgb(255, 255, 255);
+    background-color: red;
+
+    border-radius: 2px;
+    padding: 0 5px;
+    font-size: 18px;
+    font-weight: bold;
+
+}
+button:hover{
+transform: scale(1.1);
+}
+
+footer{
+    background-color: red;
+    padding: 10px;
+}
+footer p{
+    display: flex;
+    color: white;
+    justify-content: center;
+    text-align: center;
+}
+.header{
+    background-color: red;
+}
+
+#preco{
+    font-size: 25px;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+
+}
+
+.col-md-4{
+    max-width: 200px;
+    width: 100%;
+
+}
+@media screen and (max-width:700px) {
+    .container{
+max-width: 200px;
+    width: 100%;
+}
+
+#guara{
+    height: 100px;
+    width: 100px;
+}
+
+img{
+    height: 100px;
+    width: 100px;
+}
+
+.col{
+    display: grid;
+    grid-template-columns: repeat(2, 65%);
+
+}
+
+.h4{
+    font-size: 10px;
+
+}
+
+.comp{
+    max-width: 300px;
+}
+
+header h1{
+    font-size: 25px;
+width: 100%;
+}
+
+
+button{
+    margin-bottom: 20px;
+}
+
+#guara{
+    width: 100px;
+    height: 100px;
+    margin: 3px auto;
+}
+}
+
+@media screen and (min-width:701px) and (max-width:1023px){
+
+    .col{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    }
+    .container{
+max-width: 600px;
+    width: 100%;
+
+}
+
+.comp{
+    padding: 20px;
+    
+}
+.comp h1{
+    font-size: 60px;
+}
+
+h2{
+    font-size: 40px;
+}
+
+h3{
+    font-size: 30px;
+}
+
+.h4{
+    
+    font-size: 20px;
+}
+
+
+
+#preco{
+    font-size: 20px;
+}
+
+img{
+    margin-top: 20px;
+    width: 150px;
+    height: 150px;
+}
+
+#guara{
+    width: 110px;
+    height: 110px;
+    margin: 30px auto;
+}
+
+.col-md-4{
+    max-width: 200px;
+}
+}
+</style>
+<body>
+<div class="header" >
+    <header class="container comp">
+        <h1>Lanchonete Daniel & Companhia</h1>
+    </header>
+</div>
+<div class="container">
+    <div class="row">
+<div class="hamburger">
+    <h2>Hamburger</h2>
+    <div class="col">
+
+        <div class="col-md-4 ">
+
+            <img src="./hamb1.jpg" alt="">
+            <h3>X-frango</h3>
+            <p class="h4">pão,salada,peito de frango e queijo</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img src="./hamb2.jpg" alt="">
+            <h3>x-egg</h3>
+            <p class="h4">hambúrguer, tomate,queijo, ovo</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img src="hamb3.jpg" alt="">
+            <h3>Tradicional</h3>
+            <p class="h4">alface, tomate, bacon e queijo.</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img src="./hamb4.jpg" alt="">
+            <h3>X-salada</h3>
+            <p class="h4">pão,salada,hamburger, carne e ovo</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+                </div>
+            </div>
+</div>
+<div class="refri">
+    <h2>Refrigerante</h2>
+
+    <div class="col">
+        <div class="col-md-4">
+            <img src="fantauva.jpg" alt="">
+            <h3>Fanta uva</h3>
+            <p class="h4">350 ml</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img src="sprit.jpg" alt="">
+            <h3>Sprite</h3>
+            <p class="h4">350 ml</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img src="fanta.jpg" alt="">
+            <h3>Fanta laranja</h3>
+            <p class="h4">350 ml</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+        <div class="col-md-4">
+            <img id="guara" src="guara.jpg" alt="">
+            <h3>guarana</h3>
+            <p class="h4">350 ml</p>
+        <p id="preco">R$12,00</p>
+        <a href="http://api.whatsapp.com/send?1=pt_BR&phone=5579988610139" ><button >Faça seu pedido</button></a>
+        </div>
+    </div>
+</div>
+
+</div>
+<footer class="h3">
+    <p>&copy;Lanchonete daniel e companhia/ todos os direitos reservados</p>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
